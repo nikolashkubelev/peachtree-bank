@@ -1,0 +1,12 @@
+.icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &.refresh {
+    background-image: url('../images/icons/arrows.png');
+  }
+
+  &.briefcase {
+    background-image: url('../images/icons/briefcase.png');
+  }
+}
