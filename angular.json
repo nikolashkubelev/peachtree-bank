@@ -13,6 +13,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "peachtree",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "ru": "src/locale/messages.ru.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -60,6 +66,11 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "ru": {
+              "localize": [
+                "ru"
+              ]
             }
           }
         },
@@ -71,6 +82,9 @@
           "configurations": {
             "production": {
               "browserTarget": "peachtree-bank:build:production"
+            },
+            "ru": {
+              "browserTarget": "peachtree-bank:build:ru"
             }
           }
         },
