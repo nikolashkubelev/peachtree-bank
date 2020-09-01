@@ -1,0 +1,23 @@
+<span class="peachtree-sorting-bar__sort-by">Sort By:</span>
+<form class="peachtree-sorting-bar__form" [formGroup]="form">
+  <label
+    *ngFor="let sortingType of sortingTypes"
+    class="peachtree-sorting-bar__label"
+    [class.active]="isActive(sortingType)"
+    (click)="setActive($event, sortingType)"
+  >
+    <input
+      type="radio"
+      class="peachtree-sorting-bar__input"
+      value="sortingType"
+      [formControlName]="formControlsNames.sortingType"
+    >
+    <span
+      class="peachtree-sorting-bar__option-title"
+      [class.asc]="sortingOrder === 'asc'"
+      [class.desc]="sortingOrder === 'desc'"
+    >
+      {{ sortingType }}
+    </span>
+  </label>
+</form>

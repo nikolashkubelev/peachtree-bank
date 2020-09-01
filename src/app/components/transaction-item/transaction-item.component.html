@@ -1,0 +1,12 @@
+<div class="peachtree-transaction-item__category-code" [style.backgroundColor]="data?.categoryCode"></div>
+<div class="peachtree-transaction-item__date">{{ data?.transactionDate | date: 'MMM d' }}</div>
+<img *ngIf="data.merchantLogo" class="peachtree-transaction-item__merchant-logo" [src]="data.merchantLogo" [alt]="data.merchant">
+<span
+  *ngIf="!data.merchantLogo"
+  class="peachtree-transaction-item__merchant-logo peachtree-transaction-item__merchant-logo--placeholder"
+>LOGO</span>
+<div class="peachtree-transaction-item__merchant-info">
+  <div class="peachtree-transaction-item__merchant">{{ data?.merchant }}</div>
+  <div class="peachtree-transaction-item__transaction-type">{{ data?.transactionType }}</div>
+</div>
+<div class="peachtree-transaction-item__amount">{{ data?.amount | currency }}</div>

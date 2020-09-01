@@ -1,0 +1,24 @@
+@import '../variables/colors';
+
+%transfer {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+
+  .transfer__row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .transfer__label {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .transfer__value {
+    color: $grey;
+    height: 24px;
+    line-height: 24px;
+  }
+}

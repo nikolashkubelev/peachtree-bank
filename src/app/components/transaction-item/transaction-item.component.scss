@@ -1,0 +1,44 @@
+@import '../../../assets/styles/variables/colors';
+
+:host {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  border-right: 1px solid $grey;
+  margin-top: -1px;
+}
+
+.peachtree-transaction-item__category-code {
+  height: 100%;
+  width: 6px;
+}
+
+.peachtree-transaction-item__date {
+  text-align: center;
+  width: 100px;
+}
+
+.peachtree-transaction-item__merchant-info {
+  padding: 0 24px;
+}
+
+.peachtree-transaction-item__merchant-logo {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100%);
+
+  &--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid $grey;
+  }
+}
+
+.peachtree-transaction-item__amount {
+  margin-left: auto;
+  padding: 0 24px;
+}
+

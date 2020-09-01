@@ -1,0 +1,30 @@
+<peachtree-pane
+  class="peachtree-transfer-pane__container"
+  [headerParams]="headerParams"
+>
+  <peachtree-transfer-form
+    *ngIf="isFormShown"
+    [currencySymbol]="currencySymbol"
+    class="peachtree-transfer-pane__form"
+    (formSubmit)="onFormSubmit($event)"
+  ></peachtree-transfer-form>
+  <peachtree-transfer-preview
+    *ngIf="!isFormShown"
+    class="peachtree-transfer-pane__preview"
+    [data]="transferItem"
+  ></peachtree-transfer-preview>
+  <div class="peachtree-transfer-pane__buttons">
+    <button
+      *ngIf="!isFormShown"
+      class="peachtree-transfer-pane__button--cancel"
+      (click)="isFormShown = true"
+    >Cancel</button>
+    <button
+      *ngIf="!isFormShown"
+      class="peachtree-transfer-pane__button--transfer"
+      (click)="onTransfer()"
+    >
+      Transfer
+    </button>
+  </div>
+</peachtree-pane>

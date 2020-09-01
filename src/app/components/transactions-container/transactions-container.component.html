@@ -1,0 +1,12 @@
+<div class="container">
+  <peachtree-transfer-pane
+    class="peachtree-transactions-container__pane"
+    (transfer)="onTransfer($event)"
+  >
+  </peachtree-transfer-pane>
+  <peachtree-transactions-list
+    class="peachtree-transactions-container__list"
+    [transactions]="transactionsList$ | async"
+  >
+  </peachtree-transactions-list>
+</div>

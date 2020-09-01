@@ -1,0 +1,14 @@
+<div class="peachtree-transfer-preview__container">
+  <div class="peachtree-transfer-preview__row transfer__row">
+    <span class="peachtree-transfer-preview__label transfer__label">From Account</span>
+    <span class="peachtree-transfer-preview__value transfer__value">{{ data?.fromAccount }}</span>
+  </div>
+  <div class="peachtree-transfer-preview__row transfer__row">
+    <span class="peachtree-transfer-preview__label transfer__label">To Account</span>
+    <span class="peachtree-transfer-preview__value transfer__value">{{ data?.toAccount }}</span>
+  </div>
+  <div class="peachtree-transfer-preview__row transfer__row">
+    <span class="peachtree-transfer-preview__label transfer__label">Amount</span>
+    <span class="peachtree-transfer-preview__value transfer__value">{{ data?.amount | currency }}</span>
+  </div>
+</div>

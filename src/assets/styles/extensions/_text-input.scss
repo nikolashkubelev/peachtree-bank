@@ -1,0 +1,15 @@
+@import '../variables/colors';
+
+%text-input {
+  border: none;
+  border-bottom: 1px solid $light-grey;
+  outline: none;
+  height: 24px;
+  font-family: 'Kanit';
+  font-size: 14px;
+  padding: 2px 0;
+
+  &:focus {
+    outline: none;
+  }
+}

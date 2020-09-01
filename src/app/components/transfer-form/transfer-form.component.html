@@ -1,0 +1,34 @@
+<form class="peachtree-transfer-form__container" [formGroup]="form" novalidate>
+  <div class="peachtree-transfer-form__row transfer__row">
+    <label class="peachtree-transfer-form__label transfer__label">From Account</label>
+    <input
+      type="text"
+      class="peachtree-transfer-form__input transfer__value"
+      [formControlName]="formControlsNames.fromAccount"
+    >
+  </div>
+  <div class="peachtree-transfer-form__row transfer__row">
+    <label class="peachtree-transfer-form__label transfer__label">To Account</label>
+    <input
+      type="text"
+      class="peachtree-transfer-form__input transfer__value"
+      [formControlName]="formControlsNames.toAccount"
+    >
+  </div>
+  <div class="peachtree-transfer-form__row transfer__row">
+    <label class="peachtree-transfer-form__label transfer__label">Amount</label>
+    <div class="peachtree-transfer-form__value-container">
+      <span class="peachtree-transfer-form__symbol">{{ currencySymbol }}</span>
+      <input
+        type="text"
+        class="peachtree-transfer-form__input peachtree-transfer-form__input--amount transfer__value"
+        [formControlName]="formControlsNames.amount"
+        placeholder="0.00"
+      >
+    </div>
+  </div>
+  <button
+    class="peachtree-transfer-form__button--submit"
+    (click)="onSubmit($event)"
+  >Submit</button>
+</form>

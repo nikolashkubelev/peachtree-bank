@@ -1,0 +1,6 @@
+@import '../../../assets/styles/variables/colors';
+@import '../../../assets/styles/extensions/transfer';
+
+.peachtree-transfer-preview__container {
+  @extend %transfer;
+}

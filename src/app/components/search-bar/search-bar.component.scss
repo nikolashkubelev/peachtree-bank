@@ -1,0 +1,24 @@
+.peachtree-transactions-list-toolbar__container {
+  position: relative;
+}
+
+.peachtree-transactions-list-toolbar__remove {
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+.peachtree-transactions-list-toolbar__input {
+  width: 100%;
+  padding: 0 8px;
+}
+
+.peachtree-transactions-list-toolbar__container:hover {
+  .peachtree-transactions-list-toolbar__remove {
+    display: block;
+  }
+}

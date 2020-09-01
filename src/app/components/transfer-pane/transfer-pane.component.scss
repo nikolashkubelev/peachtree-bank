@@ -1,0 +1,26 @@
+@import '../../../assets/styles/variables/colors';
+@import '../../../assets/styles/mixins/button';
+
+:host {
+  background-color: $white;
+  align-self: flex-start;
+}
+
+.peachtree-transfer-pane__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.peachtree-transfer-pane__button--cancel {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+  font-family: "Kanit";
+  font-size: 14px;
+}
+
+.peachtree-transfer-pane__button--transfer {
+  @include button($orange, $white);
+}

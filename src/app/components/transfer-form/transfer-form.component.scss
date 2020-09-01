@@ -1,0 +1,39 @@
+@import '../../../assets/styles/variables/colors';
+@import '../../../assets/styles/extensions/transfer';
+@import '../../../assets/styles/mixins/button';
+
+.peachtree-transfer-form__container {
+  @extend %transfer;
+}
+
+.peachtree-transfer-form__value-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.peachtree-transfer-form__symbol {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: $grey;
+}
+
+.peachtree-transfer-form__input {
+  width: 100%;
+
+  &--amount {
+    padding-left: 8px;
+  }
+
+ &.ng-invalid.ng-touched {
+   border-bottom: 1px solid $red;
+ }
+}
+
+.peachtree-transfer-form__button--submit {
+  @include button($orange, $white);
+  align-self: flex-end;
+}

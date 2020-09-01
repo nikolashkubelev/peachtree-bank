@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.peachtree-transactions-list-toolbar__form {
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+    flex-basis: 50%;
+  }
+}

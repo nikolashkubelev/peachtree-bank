@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/reset';
+
+@import './assets/styles/layout';
+@import './assets/styles/icons';
+@import './assets/styles/extensions/text-input';
+
+body {
+  font-family: "Kanit";
+  background-image: url('./assets/images/background.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  @extend %text-input;
+}

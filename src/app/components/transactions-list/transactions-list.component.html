@@ -1,0 +1,9 @@
+<peachtree-pane [headerParams]="headerParams">
+  <peachtree-transactions-list-toolbar (filtersChange)="onFiltersChange($event)"></peachtree-transactions-list-toolbar>
+  <div class="peachtree-transactions-list__items">
+    <peachtree-transaction-item
+      *ngFor="let transaction of filteredTransactions"
+      [data]="transaction"
+    ></peachtree-transaction-item>
+  </div>
+</peachtree-pane>

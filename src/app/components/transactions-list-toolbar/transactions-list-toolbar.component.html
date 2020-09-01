@@ -1,0 +1,12 @@
+<form
+  class="peachtree-transactions-list-toolbar__form"
+  [formGroup]="form"
+  novalidate
+>
+  <peachtree-search-bar [formControlName]="formControlNames.query"></peachtree-search-bar>
+  <peachtree-sorting-bar
+    class="peachtree-transactions-list-toolbar__sorting-bar"
+    [sortingTypes]="sortingTypes"
+    [formControlName]="formControlNames.sorting"
+  ></peachtree-sorting-bar>
+</form>

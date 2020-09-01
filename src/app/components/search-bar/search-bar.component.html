@@ -1,0 +1,14 @@
+<div class="peachtree-transactions-list-toolbar__container">
+  <input
+    #searchInput
+    class="peachtree-transactions-list-toolbar__input"
+    type="text"
+    [placeholder]="placeholder"
+    [(ngModel)]="value"
+    (ngModelChange)="onInputValueChange()"
+  >
+  <span
+    class="peachtree-transactions-list-toolbar__remove"
+    (click)="clearQuery()"
+  >✕</span>
+</div>
