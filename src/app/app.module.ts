@@ -1,6 +1,6 @@
 import { TransactionsListEffects } from './store/transactions-list/transactions-list.effects';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, LOCALE_ID } from '@angular/core';
+import { NgModule, LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
@@ -48,7 +48,7 @@ import { AppState } from './store/app.state';
     }),
     EffectsModule.forRoot([TransactionsListEffects])
   ],
-  providers: [ { provide: LOCALE_ID, useValue: 'en' } ],
+  providers: [ { provide: LOCALE_ID, useValue: 'en' }, { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

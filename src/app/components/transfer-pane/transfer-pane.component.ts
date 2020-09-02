@@ -7,8 +7,9 @@ import {
   Inject,
   LOCALE_ID,
   ChangeDetectionStrategy,
+  DEFAULT_CURRENCY_CODE,
 } from '@angular/core';
-import { getLocaleCurrencySymbol } from '@angular/common';
+import { getLocaleCurrencySymbol, getCurrencySymbol } from '@angular/common';
 import { PaneHeaderParams } from '../../interfaces/pane-header-params.interface';
 
 @Component({
@@ -29,8 +30,11 @@ export class TransferPaneComponent {
 
   @Output() transfer = new EventEmitter<TransferItem>();
 
-  constructor(@Inject(LOCALE_ID) public locale: string) {
-    this.currencySymbol = getLocaleCurrencySymbol(this.locale);
+  constructor(
+    @Inject(LOCALE_ID) public locale: string,
+    @Inject(DEFAULT_CURRENCY_CODE) public defaultCurrencyCode: string
+  ) {
+    this.currencySymbol = getCurrencySymbol(this.defaultCurrencyCode, 'narrow');
   }
 
   onFormSubmit(transfer: TransferItem): void {
