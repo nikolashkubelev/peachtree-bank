@@ -1,4 +1,4 @@
-<span class="peachtree-sorting-bar__sort-by">Sort By:</span>
+<span i18n="@@sortingBar.title" class="peachtree-sorting-bar__sort-by">Sort By:</span>
 <form class="peachtree-sorting-bar__form" [formGroup]="form">
   <label
     *ngFor="let sortingType of sortingTypes"
@@ -13,6 +13,7 @@
       [formControlName]="formControlsNames.sortingType"
     >
     <span
+      i18n="@@sortingBar.optionTitle"
       class="peachtree-sorting-bar__option-title"
       [class.asc]="sortingOrder === 'asc'"
       [class.desc]="sortingOrder === 'desc'"

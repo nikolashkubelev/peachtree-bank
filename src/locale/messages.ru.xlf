@@ -2,12 +2,41 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="ru-RU" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="introductionHeader" datatype="html">
-        <source> Hello i18n! </source>
-        <target> Привет i18n ! </target>
-        <note priority="1" from="description">An introduction header for this sample</note>
-        <note priority="1" from="meaning">User welcome</note>
+      <trans-unit id="transferForm.title" datatype="html">
+        <source>Make a Transfer</source>
+        <target>Перевод</target>
       </trans-unit>
+      <trans-unit id="transferForm.fromAccount" datatype="html">
+        <source>From Account</source>
+        <target>Аккаунт</target>
+      </trans-unit>
+      <trans-unit id="transferForm.toAccount" datatype="html">
+        <source>To Account</source>
+        <target>Получатель</target>
+      </trans-unit>
+      <trans-unit id="transferForm.amount" datatype="html">
+        <source>Amount</source>
+        <target>Сумма</target>
+      </trans-unit>
+      <trans-unit id="transferForm.submit" datatype="html">
+        <source>Submit</source>
+        <target>Отправить</target>
+      </trans-unit>
+
+      <trans-unit id="transactionsList.title" datatype="html">
+        <source>Recent Transactions</source>
+        <target>Последние транзакции</target>
+      </trans-unit>
+
+      <trans-unit id="sortingBar.title" datatype="html">
+        <source>Sort By</source>
+        <target>Сортировать по:</target>
+      </trans-unit>
+      <trans-unit id="sortingBar.optionTitle" datatype="html">
+        <source>Date</source>
+        <target>Дата</target>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>
