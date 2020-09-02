@@ -2,6 +2,95 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="transferForm.fromAccount" datatype="html">
+        <source>From Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transfer-form/transfer-form.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transferForm.toAccount" datatype="html">
+        <source>To Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transfer-form/transfer-form.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transferForm.amount" datatype="html">
+        <source>Amount</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transfer-form/transfer-form.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transferForm.submit" datatype="html">
+        <source>Submit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transfer-form/transfer-form.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e5f4513905a3664d2cfb136b504363241a584607" datatype="html">
+        <source>
+  <x id="START_TAG_PEACHTREE-TRANSACTIONS-LIST-TOOLBAR" ctype="x-peachtree-transactions-list-toolbar" equiv-text="&lt;peachtree-transactions-list-toolbar&gt;"/><x id="CLOSE_TAG_PEACHTREE-TRANSACTIONS-LIST-TOOLBAR" ctype="x-peachtree-transactions-list-toolbar" equiv-text="&lt;/peachtree-transactions-list-toolbar&gt;"/>
+  <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+    <x id="START_TAG_PEACHTREE-TRANSACTION-ITEM" ctype="x-peachtree-transaction-item" equiv-text="&lt;peachtree-transaction-item&gt;"/><x id="CLOSE_TAG_PEACHTREE-TRANSACTION-ITEM" ctype="x-peachtree-transaction-item" equiv-text="&lt;/peachtree-transaction-item&gt;"/>
+  <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">transactionsList.title</note>
+      </trans-unit>
+      <trans-unit id="ec6bc46a85a1c8dfc75cef867c1e9470cce65000" datatype="html">
+        <source>
+  <x id="ICU" equiv-text="{solo, select, date {...} beneficiary {...} amount {...}}"/>
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sorting-bar/sorting-bar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e7a7cadbf6afda290f7ac01d5950512f83cce0f8" datatype="html">
+        <source>{VAR_SELECT, select, date {date} beneficiary {beneficiary} amount {amount} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sorting-bar/sorting-bar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sortingBar.title" datatype="html">
+        <source>Sort By:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sorting-bar/sorting-bar.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ad532814b9a05f93d8ffc77a91d4797903ce3f65" datatype="html">
+        <source>
+      <x id="ICU" equiv-text="{sortingType, select, date {...} beneficiary {...} amount {...}}"/>
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sorting-bar/sorting-bar.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="53d92b9d1874bf867561f110344e2b01ef815c37" datatype="html">
+        <source>{VAR_SELECT, select, date {date} beneficiary {beneficiary} amount {amount} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sorting-bar/sorting-bar.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transferForm.title" datatype="html">
+        <source>
+    <x id="INTERPOLATION" equiv-text="{{ headerParams.title }}"/>
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pane/pane.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

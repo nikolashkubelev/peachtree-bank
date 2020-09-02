@@ -2,6 +2,10 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="ru-RU" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="project.title" datatype="html">
+        <source>Peachtree Bank</source>
+        <target>Банк "Персиковое дерево"</target>
+      </trans-unit>
       <trans-unit id="transferForm.title" datatype="html">
         <source>Make a Transfer</source>
         <target>Перевод</target>
@@ -30,10 +34,44 @@
         <source>Sort By</source>
         <target>Сортировать по:</target>
       </trans-unit>
-      <trans-unit id="sortingBar.optionTitle" datatype="html">
-        <source>Date</source>
-        <target>Дата</target>
+
+
+      <trans-unit id="ec6bc46a85a1c8dfc75cef867c1e9470cce65000" datatype="html">
+        <source>
+  <x id="ICU" equiv-text="{solo, select, date {...} beneficiary {...} amount {...}}"/>
+</source>
+        <target>
+  <x id="ICU" equiv-text="{solo, select, date {...} beneficiary {...} amount {...}}"/>
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sorting-bar/sorting-bar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
       </trans-unit>
+      <trans-unit id="e7a7cadbf6afda290f7ac01d5950512f83cce0f8" datatype="html">
+        <source>{VAR_SELECT, select, date {date} beneficiary {beneficiary} amount {amount} }</source>
+        <target>{VAR_SELECT, select, date {дата} beneficiary {бенефициар} amount {сумма} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sorting-bar/sorting-bar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+
+
+      <trans-unit id="03bb272af888cc0a85a9b7f96d634bc24f803296" datatype="html">
+        <source>
+          <x id="ICU" equiv-text="{sortingType, select, date {...} beneficiary {...} amount {...}}"/>
+        </source>
+        <target>
+          llala
+          <x id="ICU" equiv-text="{sortingType, select, date {...} beneficiary {...} amount {...}}"/>
+        </target>
+      </trans-unit>
+      <trans-unit id="53d92b9d1874bf867561f110344e2b01ef815c37" datatype="html">
+        <source>{VAR_SELECT, select, date {date} beneficiary {beneficiary} amount {amount} }</source>
+        <target>{VAR_SELECT, select, date {дата} beneficiary {бенефициар} amount {сумма} }</target>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>

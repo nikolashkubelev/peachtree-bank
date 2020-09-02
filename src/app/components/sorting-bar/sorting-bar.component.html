@@ -13,12 +13,12 @@
       [formControlName]="formControlsNames.sortingType"
     >
     <span
-      i18n="@@sortingBar.optionTitle"
+      i18n
       class="peachtree-sorting-bar__option-title"
       [class.asc]="sortingOrder === 'asc'"
       [class.desc]="sortingOrder === 'desc'"
     >
-      {{ sortingType }}
+    {sortingType, select, date {date} beneficiary {beneficiary} amount {amount}}
     </span>
   </label>
 </form>
